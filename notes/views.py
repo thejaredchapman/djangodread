@@ -46,9 +46,9 @@ class NotesDetailView(DetailView):
     model = Notes
     context_object_name = "note"
 
-def detail(request, pk):
-    try:
-        note = Notes.objects.get(pk=pk)
-    except Notes.DoesNotExist:
-        raise Http404("What you're looking for doesn't exist")
-    return render(request, 'notes/notes_detail.html', {'note': note})
+    def detail(request, pk):
+        try:
+            note = Notes.objects.get(pk=pk)
+        except Notes.DoesNotExist:
+            raise Http404("What you're looking for doesn't exist")
+        return render(request, 'notes/notes_detail.html', {'note': note})
