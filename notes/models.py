@@ -6,3 +6,7 @@ class Notes(models.Model):
     text = models.TextField()
     created = models.DateField(auto_now_add=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="notes")
+
+    def _str_(self) -> str:
+        return self.title
+        
