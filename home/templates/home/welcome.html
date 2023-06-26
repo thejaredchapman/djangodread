@@ -5,6 +5,6 @@
     <h1>Lists of daily tasks to get done!</h1>
     <h2>Welcome</h2>
     <p>Today is {{today}}</p>
-    <a href="/notes/templates/notes/notes_list.html" class="btn btn-primary">View list of items to be done</a>
+    <a href="{% url 'notes.list' %}" class="btn btn-primary">View list of items to be done</a>
 
 {% endblock %}
