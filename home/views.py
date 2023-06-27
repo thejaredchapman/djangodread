@@ -20,7 +20,7 @@ class SignUpView(CreateView):
             return redirect('notes.list')
         return super().get(request, *args, **kwargs)
 
-class LoginInterfaceView(LoginView):
+class LoginInterfaceView(LoginView,LoginRequiredMixin):
     template_name = 'home/login.html'
 
 class LogoutInterfaceView(LogoutView):
