@@ -143,6 +143,6 @@ CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://web-production-4cd2.up.railway.app/'
+    'http://railway.app/'
 
 ]
