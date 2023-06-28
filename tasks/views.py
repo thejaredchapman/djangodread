@@ -1,5 +1,5 @@
 from django.views.generic import ListView
-from .models import ToDoList, ToDoItem
+from tasks.models import ToDoList, ToDoItem
 
 class ListListView(ListView):
     model = ToDoList
