@@ -17,7 +17,7 @@ class SignUpView(CreateView):
 
     def get(self, request, *args, **kwargs):
         if self.request.user.is_authenticated:
-            return redirect('notes.list')
+            return redirect('authorized.html')
         return super().get(request, *args, **kwargs)
 
 class LoginInterfaceView(LoginView,LoginRequiredMixin):

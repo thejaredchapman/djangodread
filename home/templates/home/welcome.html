@@ -2,9 +2,10 @@
 
 {% block content %}
     <header><title>Task!</title></header>
-    <h1>Lists of daily tasks to get done!</h1>
+    <h1>Notes & Tasks: to GET IT DONE!</h1>
     <h2>Welcome</h2>
     <p>Today is {{today}}</p>
-    <a href="{% url 'notes.list' %}" class="btn btn-primary">View list of items to be done</a>
+    <a href="{% url 'notes.list' %}" class="btn btn-primary">View list of Notes</a>
+    <a href="{% url 'tasks.index' %}" class="btn btn-secondary">View list of Tasks</a>
 
 {% endblock %}
