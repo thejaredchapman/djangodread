@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     #apps
     'home',
     'notes',
-    'tasks'
+    'tasks',
 ]
 
 MIDDLEWARE = [
@@ -144,6 +144,6 @@ CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://web-production-4cd2.up.railway.app/'
+    'https://web-production-4cd2.up.railway.app'
 
 ]
