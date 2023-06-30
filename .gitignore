@@ -58,8 +58,10 @@ cover/
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
-db.sqlite3-journal
+
+## Test to see if database works (TODO: Jared add it back if it doesn't work)
+#db.sqlite3
+#db.sqlite3-journal
 
 # Flask stuff:
 instance/
