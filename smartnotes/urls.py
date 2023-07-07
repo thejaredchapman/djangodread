@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('home.urls')),
     path('smart/', include('notes.urls')),
     path('tasks/', include('tasks.urls')),
+    
 ]
